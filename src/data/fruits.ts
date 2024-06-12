@@ -1,3 +1,8 @@
+export type Fruits = {
+  id: number;
+  name: string;
+};
+
 export const dataFruits = [
   {
     id: 1,
@@ -9,7 +14,7 @@ export const dataFruits = [
   },
   {
     id: 3,
-    name: "Cerry",
+    name: "Cherry",
   },
 
   {

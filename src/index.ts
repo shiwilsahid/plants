@@ -16,15 +16,11 @@ app.get("/fruits", (c) => {
   return c.json(dataFruits);
 });
 
-app.get("/vegetables", (c) => {
-  return c.json(dataVegetables);
-});
-
 app.get("/fruits/:id", (c) => {
   const id = Number(c.req.param("id"));
 
   if (!id) {
-    return c.json({ message: "ID not found" });
+    return c.json({ message: "Fruit ID not found" });
   }
 
   const fruit = dataFruits.find((fruit) => fruit.id === id);
@@ -36,11 +32,15 @@ app.get("/fruits/:id", (c) => {
   return c.json(fruit);
 });
 
+app.get("/vegetables", (c) => {
+  return c.json(dataVegetables);
+});
+
 app.get("/vegetables/:id", (c) => {
   const id = Number(c.req.param("id"));
 
   if (!id) {
-    return c.json({ message: "ID not found" });
+    return c.json({ message: "Vegetable ID not found" });
   }
 
   const vegetable = dataVegetables.find((vegetable) => vegetable.id === id);
