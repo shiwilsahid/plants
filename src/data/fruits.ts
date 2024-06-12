@@ -1,9 +1,9 @@
-export type Fruits = {
+export type Fruit = {
   id: number;
   name: string;
 };
 
-export const dataFruits = [
+export const dataFruits: Fruit[] = [
   {
     id: 1,
     name: "Apple",
@@ -25,4 +25,5 @@ export const dataFruits = [
     id: 5,
     name: "Watermelon",
   },
+  
 ];

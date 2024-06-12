@@ -30,6 +30,11 @@ Vegetables:
 | `/vegetables/:id` | `DELETE` | Delete vegetable by id |
 | `/vegetables/:id` | `PUT`    | Update vegetable by id |
 
+## Tech Stack
+
+- Hono
+- Bun
+
 ## Getting Started
 
 To install dependencies:
@@ -46,4 +51,4 @@ or
 bun dev
 ```
 
-open http://localhost:3000
+open <http://localhost:3000>

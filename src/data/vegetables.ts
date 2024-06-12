@@ -1,4 +1,9 @@
-export const dataVegetables = [
+export type Vegetable = {
+  id: number;
+  name: string;
+};
+
+export const dataVegetables : Vegetable[] = [
   {
     id: 1,
     name: "Spinach",
