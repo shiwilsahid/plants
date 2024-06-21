@@ -4,6 +4,8 @@ import { dataVegetables } from "./data/vegetables";
 
 const app = new Hono();
 
+let fruits = dataFruits;
+
 app.get("/", (c) => {
   return c.json({
     message: "FAV API",
@@ -13,7 +15,7 @@ app.get("/", (c) => {
 });
 
 app.get("/fruits", (c) => {
-  return c.json(dataFruits);
+  return c.json(fruits);
 });
 
 app.get("/fruits/:id", (c) => {
@@ -23,7 +25,7 @@ app.get("/fruits/:id", (c) => {
     return c.json({ message: "Fruit ID not found" });
   }
 
-  const fruit = dataFruits.find((fruit) => fruit.id === id);
+  const fruit = fruits.find((fruit) => fruit.id === id);
 
   if (!fruit) {
     return c.json({ message: "No fruit data found" });
@@ -32,8 +34,10 @@ app.get("/fruits/:id", (c) => {
   return c.json(fruit);
 });
 
+let vegetables = dataVegetables;
+
 app.get("/vegetables", (c) => {
-  return c.json(dataVegetables);
+  return c.json(vegetables);
 });
 
 app.get("/vegetables/:id", (c) => {
@@ -43,7 +47,7 @@ app.get("/vegetables/:id", (c) => {
     return c.json({ message: "Vegetable ID not found" });
   }
 
-  const vegetable = dataVegetables.find((vegetable) => vegetable.id === id);
+  const vegetable = vegetables.find((vegetable) => vegetable.id === id);
 
   if (!vegetable) {
     return c.json({ message: "No vegetable data found" });
