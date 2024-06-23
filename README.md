@@ -1,6 +1,6 @@
 # PLANTS
 
-PLANTS API to list various fruits and Vegetables.
+PLANTS API to list various plants.
 
 ## REST API Specification
 
