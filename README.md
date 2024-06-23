@@ -1,34 +1,22 @@
-# FAV
+# PLANTS
 
-FAV stands for Fruits and Vegetables.
-FAV API to list various Fruits and Vegetables.
+PLANTS API to list various fruits and Vegetables.
 
 ## REST API Specification
 
 - Production: `https://fav.mnursahid.com`
 - Local: `http://localhost:3000`
 
-Fruits:
+Plants:
 
 | Endpoint      | HTTP     | Description        |
 | ------------- | -------- | ------------------ |
-| `/fruits`     | `GET`    | Get all fruits     |
-| `/fruits/:id` | `GET`    | Get fruit by id    |
-| `/fruits`     | `POST`   | Add new fruit      |
-| `/fruits`     | `DELETE` | Delete all fruits  |
-| `/fruits/:id` | `DELETE` | Delete fruit by id |
-| `/fruit/:id`  | `PUT`    | Update fruit by id |
-
-Vegetables:
-
-| Endpoint          | HTTP     | Description            |
-| ----------------- | -------- | ---------------------- |
-| `/vegetables`     | `GET`    | Get all vegetables     |
-| `/vegetables/:id` | `GET`    | Get vegetable by id    |
-| `/vegetables`     | `POST`   | Add new vegetable      |
-| `/vegetables`     | `DELETE` | Delete all vegetables  |
-| `/vegetables/:id` | `DELETE` | Delete vegetable by id |
-| `/vegetables/:id` | `PUT`    | Update vegetable by id |
+| `/Plants`     | `GET`    | Get all Plants     |
+| `/Plants/:id` | `GET`    | Get plant by id    |
+| `/Plants`     | `POST`   | Add new plant      |
+| `/Plants`     | `DELETE` | Delete all Plants  |
+| `/Plants/:id` | `DELETE` | Delete plant by id |
+| `/plants/:id` | `PUT`    | Update plant by id |
 
 ## Tech Stack
 
