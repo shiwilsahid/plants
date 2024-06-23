@@ -6,9 +6,10 @@ FROM oven/bun:debian
 WORKDIR /usr/src/app
 
 # Copy app files
-COPY package.json ./
-COPY bun.lockb ./
-COPY src ./
+# COPY package.json ./
+# COPY bun.lockb ./
+# COPY src ./
+COPY . .
 
 # Install app dependencies
 RUN bun install
