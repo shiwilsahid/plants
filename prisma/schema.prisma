@@ -1,0 +1,23 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Plant {
+  id Int @id @default(autoincrement())
+
+  name String @db.VarChar(255)
+  // createdAt DateTime @default(now())
+  // updatedAt DateTime @updatedAt
+}
+
+model Specific {
+  plantId  String @id @default(cuid())
+  lastName String @db.Text
+  family   String @db.Text
+  type     String @db.Text
+}
