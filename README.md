@@ -31,6 +31,14 @@ To install dependencies:
 bun install
 ```
 
+Migrate database, generates and seed:
+
+```sh
+bun db:migrate:dev
+bun db:generate
+bun db:seed
+```
+
 To run:
 
 ```sh

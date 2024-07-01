@@ -64,6 +64,7 @@ app.post("/plants", async (c) => {
   const newPlant = await prisma.plant.create({
     data: {
       name: body.name ? String(body.name) : "",
+      // type: body.type ? String(body.type) : "",
     },
   });
 
