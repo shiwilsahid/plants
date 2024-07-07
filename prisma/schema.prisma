@@ -11,8 +11,8 @@ model Plant {
   id   Int    @id @default(autoincrement())
   name String @db.VarChar(255)
 
-  lastName String? @db.Text
-  family   String? @db.Text
+  latinName String? @db.Text
+  family    String? @db.Text
 
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now()) @updatedAt
